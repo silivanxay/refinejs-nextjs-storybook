@@ -1,8 +1,8 @@
-import { HeadlessListInferencer } from "@refinedev/inferencer/headless";
 import { GetServerSideProps } from "next";
+import { BlogPostList } from "@components/blog-posts";
 
-export default function BlogPostList() {
-  return <HeadlessListInferencer />;
+export default function BlogPostListPage() {
+  return <BlogPostList />;
 }
 
 export const getServerSideProps: GetServerSideProps<{}> = async (context) => {
